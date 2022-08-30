@@ -1,0 +1,19 @@
+{
+  "name": "base-project",
+  "version": "1.0.0",
+  "description": "## It's a program to pick a name randomly with a gif in the bottom.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "eslint": "eslint *.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "eslint": "^6.8.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.3"
+  },
+  "keywords": []
+}
