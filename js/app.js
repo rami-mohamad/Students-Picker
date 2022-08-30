@@ -41,7 +41,7 @@ const students = [
 ];
 const list = document.querySelector(".stuList");
 const button = document.querySelector(".btn");
-
+const nameStu = document.getElementById("randomName1");
 const getRandomName = (array) => {
   const name = Math.floor(Math.random() * array.length);
   const outputHtml = array[name];
@@ -52,7 +52,7 @@ function updateHtml() {
   hasBeenClicked = true;
   go();
   const interval = setInterval(() => {
-    document.getElementById("randomName1").innerText = getRandomName(students);
+    nameStu.innerText = getRandomName(students);
     document
       .getElementById("photo")
       .setAttribute("src", getRandomImage(imageUrls));
@@ -64,6 +64,12 @@ function updateHtml() {
     hasBeenClicked = false;
     button.style.backgroundColor = "green";
     go();
+    let arrayNameRepeat = nameStu.innerHTML;
+    const indexOfStu = students.indexOf(arrayNameRepeat);
+    students.length < 1
+      ? (nameStu.innerHTML =
+          "No more Names please refresh the page to start again")
+      : students.splice(indexOfStu, 1);
   }, 1000);
 }
 function getRandomImage(imageUrls) {
