@@ -49,28 +49,30 @@ const getRandomName = (array) => {
 };
 
 function updateHtml() {
-  hasBeenClicked = true;
-  go();
-  const interval = setInterval(() => {
-    nameStu.innerText = getRandomName(students);
-    document
-      .getElementById("photo")
-      .setAttribute("src", getRandomImage(imageUrls));
-    button.style.backgroundColor = "red";
-  }, 50);
-  setTimeout(() => {
-    clearInterval(interval);
-
-    hasBeenClicked = false;
-    button.style.backgroundColor = "green";
+  if (students.length >= 1) {
+    hasBeenClicked = true;
     go();
-    let arrayNameRepeat = nameStu.innerHTML;
-    const indexOfStu = students.indexOf(arrayNameRepeat);
-    students.length < 1
-      ? (nameStu.innerHTML =
-          "No more Names please refresh the page to start again")
-      : students.splice(indexOfStu, 1);
-  }, 1000);
+    const interval = setInterval(() => {
+      nameStu.innerText = getRandomName(students);
+      document
+        .getElementById("photo")
+        .setAttribute("src", getRandomImage(imageUrls));
+      button.style.backgroundColor = "red";
+    }, 50);
+    setTimeout(() => {
+      clearInterval(interval);
+
+      hasBeenClicked = false;
+      button.style.backgroundColor = "green";
+      go();
+      let arrayNameRepeat = nameStu.innerHTML;
+      const indexOfStu = students.indexOf(arrayNameRepeat);
+      students.splice(indexOfStu, 1);
+    }, 1000);
+  } else {
+    nameStu.innerHTML = "No more Names please reset the App to start again";
+    nameStu.style.color = "red";
+  }
 }
 function getRandomImage(imageUrls) {
   const image = Math.floor(Math.random() * imageUrls.length);
@@ -121,4 +123,8 @@ function getListValue(e) {
     students.push(e.value);
   }
   console.log(students);
+}
+
+function resetPage() {
+  location.reload();
 }
