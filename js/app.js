@@ -112,15 +112,19 @@ function studentsList(arr) {
 studentsList(students);
 
 function getListValue(e) {
+  let hello = e.parentElement;
   if (e.checked === true) {
+    hello.style.textDecorationLine = "line-through";
+    hello.style.color = "red";
     for (let i = 0; i <= students.length - 1; i++) {
       if (e.value === students[i]) {
-        console.log(e.value, i);
         students.splice(i, 1);
       }
     }
   } else {
     students.push(e.value);
+    hello.style.textDecorationLine = "none";
+    hello.style.color = "black";
   }
   console.log(students);
 }
