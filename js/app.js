@@ -72,6 +72,12 @@ function updateHtml() {
   } else {
     nameStu.innerHTML = "No more Names please reset the App to start again";
     nameStu.style.color = "red";
+    document
+      .getElementById("photo")
+      .setAttribute(
+        "src",
+        "https://media1.giphy.com/media/rY93u9tQbybks/giphy.gif?cid=ecf05e47vlf5t1zyba5ehsefd609dkieg08f15mg2o249mbk&rid=giphy.gif&ct=g"
+      );
   }
 }
 function getRandomImage(imageUrls) {
