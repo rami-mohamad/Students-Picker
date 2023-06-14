@@ -1,4 +1,11 @@
 const imageUrls = [
+    "https://media.giphy.com/media/cO39srN2EUIRaVqaVq/source.gif",
+  "https://media.giphy.com/media/14ut8PhnIwzros/giphy.gif",
+  "https://media.giphy.com/media/RHOwWKH5OY7buuGHNi/giphy.gif",
+  "https://media.giphy.com/media/12RfP2odT4hEOI/giphy.gif",
+  "https://media.giphy.com/media/ph6ewybUlGbW8/giphy.gif",
+  "https://media.giphy.com/media/qcAUCoQvUzeCQgH55z/giphy.gif",
+  "https://media.giphy.com/media/mI7M5W2MYXNZe/giphy.gif",
   "https://media.giphy.com/media/COYGe9rZvfiaQ/giphy.gif",
   "https://media.giphy.com/media/I9BrUZDq5hksw/source.gif",
   "https://media.giphy.com/media/B37cYPCruqwwg/source.gif",
@@ -18,13 +25,7 @@ const imageUrls = [
   "https://media.giphy.com/media/gLQjUikb8nQnS/source.gif",
   "https://media.giphy.com/media/B6G2MYBmtnGYU/source.gif",
   "https://media.giphy.com/media/gE6IUBRWZd744/source.gif",
-  "https://media.giphy.com/media/cO39srN2EUIRaVqaVq/source.gif",
-  "https://media.giphy.com/media/14ut8PhnIwzros/giphy.gif",
-  "https://media.giphy.com/media/RHOwWKH5OY7buuGHNi/giphy.gif",
-  "https://media.giphy.com/media/12RfP2odT4hEOI/giphy.gif",
-  "https://media.giphy.com/media/ph6ewybUlGbW8/giphy.gif",
-  "https://media.giphy.com/media/qcAUCoQvUzeCQgH55z/giphy.gif",
-  "https://media.giphy.com/media/mI7M5W2MYXNZe/giphy.gif"
+
 ];
 const students = [
   "Axel.N",
