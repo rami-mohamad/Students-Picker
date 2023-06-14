@@ -41,7 +41,8 @@ const students = [
   "Kai",
   "Sebastian",
   "Norbert",
-  "Anna"
+  "Anna",
+  "Bita"
 ];
 const list = document.querySelector(".stuList");
 const button = document.querySelector(".btn");
