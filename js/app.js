@@ -1,5 +1,5 @@
 const imageUrls = [
-    "https://media.giphy.com/media/cO39srN2EUIRaVqaVq/source.gif",
+  "https://media.giphy.com/media/cO39srN2EUIRaVqaVq/source.gif",
   "https://media.giphy.com/media/14ut8PhnIwzros/giphy.gif",
   "https://media.giphy.com/media/RHOwWKH5OY7buuGHNi/giphy.gif",
   "https://media.giphy.com/media/12RfP2odT4hEOI/giphy.gif",
@@ -25,31 +25,22 @@ const imageUrls = [
   "https://media.giphy.com/media/gLQjUikb8nQnS/source.gif",
   "https://media.giphy.com/media/B6G2MYBmtnGYU/source.gif",
   "https://media.giphy.com/media/gE6IUBRWZd744/source.gif",
-
 ];
 const students = [
-  "Axel.N",
-  "Katharina",
-  "Atef",
-  "Melisa",
-  "Emanuela",
-  "Hamze",
-  "Melanie",
-  "Jan",
-  "Marvin",
-  "Sven",
-  "Mehmet",
-  "Miriam",
-  "Oliver",
-  "Axel.H",
-  "Robert",
-  "Laila",
-  "Janis",
-  "Kai",
-  "Sebastian",
-  "Norbert",
-  "Anna",
-  "Bita"
+  "André",
+  "Olga",
+  "Adel",
+  "Randy",
+  "Mark",
+  "Norman",
+  "Dennis",
+  "Radoslawa",
+  "Bassam",
+  "Mohab",
+  "Orhan",
+  "Sevil",
+  "Leon",
+  "Chris",
 ];
 const list = document.querySelector(".stuList");
 const button = document.querySelector(".btn");
