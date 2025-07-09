@@ -27,20 +27,20 @@ const imageUrls = [
   "https://media.giphy.com/media/gE6IUBRWZd744/source.gif",
 ];
 const students = [
-  "André",
-  "Olga",
-  "Adel",
-  "Randy",
-  "Mark",
-  "Norman",
-  "Dennis",
-  "Radoslawa",
-  "Bassam",
-  "Mohab",
-  "Orhan",
-  "Sevil",
+  "Maik",
+  "Michael",
+  "Mandy",
+  "Maxim",
+  "Marcel",
+  "Sven",
+  "Sandra",
+  "Abdullah",
+  "Pawel",
+  "Dusan",
   "Leon",
-  "Chris",
+  "Marina",
+  "Muhammed",
+  "Benjamin",
 ];
 const list = document.querySelector(".stuList");
 const button = document.querySelector(".btn");
